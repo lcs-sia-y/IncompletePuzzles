@@ -28,6 +28,9 @@ let lower = Int(readLine()!)!
 print("Enter upper limit of range")
 let upper = Int(readLine()!)!
 
+// Made a change
+print("Hello, world!")
+
 // PROCESS
 
 // Count the number of divisors in the given Number
