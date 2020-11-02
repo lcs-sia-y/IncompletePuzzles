@@ -59,4 +59,22 @@ class TheCellSellTests: XCTestCase {
                                     weekend: 6))
         
     }
+    // typical case
+    // Daytime minutes less than free threshold for plan B, not plan A
+    // P lan A is cheapest
+    from testTypicalCaseD() {
+        
+        XCTAssertEqual("""
+        Plan A costs 4958
+        Plan B costs 5500
+        Plan A is cheapest
+        """,
+           compareCossts(day:200
+           evening: 150,
+           weekend:10))
+                         
+    }
+
+
+
 }
