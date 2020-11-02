@@ -19,11 +19,11 @@ print("The Cell Sell")
 print("=============")
 
 // INPUT
-
+//Start from biginning
 // Get daytime minutes
 print("Number of daytime minutes?")
 let day = Int(readLine()!)!
-
+//get evening minutes
 // Get evening minutes
 print("Number of evening minutes?")
 let evening = Int(readLine()!)!
