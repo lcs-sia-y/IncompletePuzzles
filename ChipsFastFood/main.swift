@@ -32,7 +32,7 @@ print("Welcome to Chip's Fast Food Emporium")
 //       Then drag and drop Extensions.swift to the Compile Sources subsection.
 //
 let burger = Int.collectInput(withPrompt: "Please enter a burger choice:", minimum: 1, maximum: 4)
-let drink = 3
+let drink = Int.collectInput(withPrompt: "Please enter a drink choice:", minimum: 1, maximum: 4)
 let side = 4
 let dessert = 1
 
@@ -52,6 +52,17 @@ if burger == 1 {
 } else if burger == 3 {
     totalCalories += 420
 } else if burger == 4 {
+    totalCalories += 0
+}
+
+// add calories for drink choice
+if drink == 1 {
+    totalCalories += 130
+} else if drink == 2 {
+    totalCalories += 160
+} else if drink == 3 {
+    totalCalories += 118
+} else if drink == 4 {
     totalCalories += 0
 }
 
