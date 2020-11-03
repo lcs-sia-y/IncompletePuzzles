@@ -42,3 +42,20 @@ let dessert = 1
 
 // OUTPUT
 // Show the calories total for the choices made by the user.
+var totalCalories = 0
+
+// add calories for burger choice
+if burger == 1 {
+    totalCalories += 461
+} else if burger == 2 {
+    totalCalories += 431
+} else if burger == 3 {
+    totalCalories += 420
+} else if burger == 4 {
+    totalCalories += 0
+}
+
+
+
+print("The total calorie count is \(totalCalories)")
+
