@@ -33,8 +33,8 @@ print("Welcome to Chip's Fast Food Emporium")
 //
 let burger = Int.collectInput(withPrompt: "Please enter a burger choice:", minimum: 1, maximum: 4)
 let drink = Int.collectInput(withPrompt: "Please enter a drink choice:", minimum: 1, maximum: 4)
-let side = 4
-let dessert = 1
+let side = Int.collectInput(withPrompt: "Please enter a side order choice:", minimum: 1, maximum: 4)
+let dessert = Int.collectInput(withPrompt: "Please enter a dessert choice:", minimum: 1, maximum: 4)
 
 // PROCESS
 // NOTE: Give some thought to what kind of data structure would be helpful for this program.
@@ -62,6 +62,28 @@ if drink == 1 {
     totalCalories += 160
 } else if drink == 3 {
     totalCalories += 118
+} else if drink == 4 {
+    totalCalories += 0
+}
+
+// add calories for side order choice
+if drink == 1 {
+    totalCalories += 100
+} else if drink == 2 {
+    totalCalories += 57
+} else if drink == 3 {
+    totalCalories += 70
+} else if drink == 4 {
+    totalCalories += 0
+}
+
+// add calories for desert choice
+if drink == 1 {
+    totalCalories += 167
+} else if drink == 2 {
+    totalCalories += 266
+} else if drink == 3 {
+    totalCalories += 75
 } else if drink == 4 {
     totalCalories += 0
 }
