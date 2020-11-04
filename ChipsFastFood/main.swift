@@ -66,25 +66,25 @@ if drink == 1 {
     totalCalories += 0
 }
 
-// add calories for side order choice
-if drink == 1 {
+// add calories for side choice
+if side == 1 {
     totalCalories += 100
-} else if drink == 2 {
+} else if side == 2 {
     totalCalories += 57
-} else if drink == 3 {
+} else if side == 3 {
     totalCalories += 70
-} else if drink == 4 {
+} else if side == 4 {
     totalCalories += 0
 }
 
 // add calories for desert choice
-if drink == 1 {
+if dessert == 1 {
     totalCalories += 167
-} else if drink == 2 {
+} else if dessert == 2 {
     totalCalories += 266
-} else if drink == 3 {
+} else if dessert == 3 {
     totalCalories += 75
-} else if drink == 4 {
+} else if dessert == 4 {
     totalCalories += 0
 }
 
