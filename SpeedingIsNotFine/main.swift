@@ -29,3 +29,17 @@ if speed < limit {
 } else {
     print("You are speeding.")
 }
+
+let difference = speed-limit
+switch difference {
+case ...0:
+    print("Congratulations, you are within the speed limit!")
+case 0...20:
+    print("You are speeding and your fine is $100.")
+case 21...30:
+    print("You are speeding and your fine is $270.")
+case 31...:
+    print("You are speeding and your fine is $500.")
+default:
+    break
+}
