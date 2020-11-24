@@ -41,5 +41,5 @@ case 21...30:
 case 31...:
     print("You are speeding and your fine is $500.")
 default:
-    break
+    print("you are doing great")
 }
