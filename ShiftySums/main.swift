@@ -16,18 +16,22 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
-let n = Int(readLine()!)!
+var n = Int.collectInput(withPrompt: "The number to be shifted: ", minimum: 0,maximum:nil)
 
-// How many times should we shift?
-let k = 3
+
+//How many times should we shift?
+var k = Int.collectInput(withPrompt: "Number of time we should shift: ", minimum: 0, maximum: nil)
 
 // PROCESS
 
 // Shift the given number "k" number of times
 var output = n
-output += n * 10
-output += n * 10 * 10
-output += n * 10 * 10 * 10
+
+for exponent in 1...k{
+    let newValue = Int(pow(10.0, Float(exponent)))
+    let willBeAdded = n * newValue
+    output += willBeAdded
+}
 
 // OUTPUT
 print(output)
